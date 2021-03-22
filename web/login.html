@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/login.css">
+    <title>GSOC21 | Login</title>
+    <script defer src="scripts/login.dart.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/">
+            <img class="logo" src="images/head-logo.svg" alt="" height="28px">
+        </a>
+    </nav>
+    <div class="bkg-container">
+        <div class="container">
+            <img class="logo" src="images/head-logo.svg" alt="">
+            <p style="color: white; font-size: 20px;">
+                Your credentials are not save anywhere.. <br>
+                Just sent to another route as JSON
+            </p>
+            <form id="form" name= "form" class="form" action="" method="POST" onsubmit="submitDetails()">
+                <input id="email" class="input" name="email" placeholder="Enter email address" >
+                <input id="pwd" class="input" type="password" name="password" placeholder="Enter password">
+                <button id="submit" type="button">GET STARTED</button>
+            </form>
+        </div>
+        <div id="output" class="output">
+            <h1>Response from API</h1>
+            <p style="color: #0175c2;">[POST] http://localhost:4000/users/login</p>
+            <p id="response-text"> </p>
+        </div>
+    </div>
+</body>
+</html>

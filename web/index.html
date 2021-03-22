@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <title>GSOC21 | Home</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="login">Sign-In</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container home-banner">
+            <img class="logo" src="images/head-logo.svg" alt="pub.dev package manager">
+            <form class="search-bar banner-item" action="/packages">
+                <input class="input" name="name" placeholder="Search packages" autocomplete="on" autofocus="autofocus">
+                <button class="icon"></button>
+                
+                <input id="-search-discontinued-field" type="hidden" name="discontinued" value="1" disabled="disabled">
+                <input id="-search-unlisted-field" type="hidden" name="unlisted" value="1" disabled="disabled">
+                <input id="-search-null-safe-field" type="hidden" name="null-safe" value="1" disabled="disabled">
+            </form>
+            <p class="text">
+                I have data about.. 4 packages used in this project. Saved as JSON. <br>
+                That data is retreived by a REST Api.
+                <br>
+                <p style="color: #0175c2;">"shelf", "shelf_static", "shelf_router", "meta"</p>
+                <br>
+                Pressing enter without adding any data will show you data of all packages, otherwise you get data about related search.
+            </p>
+        </div>
+    </header>
+
+</body>
+</html>

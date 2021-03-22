@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+nav {
+    background-color: #1c2834;
+    padding: 8px 40px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.bkg-container {
+    background: #132030;
+    background-image: none;
+    background-size: auto;
+    background-image: url("../images/hero-bg-static.svg");
+    background-size: cover;
+    color: #8d9399;
+    padding: 10px 0px;
+    display: flex;
+}
+.container {
+    text-align: center;
+    padding: 80px 0px 40px 0px;
+    width: 70%;
+}
+.container > .logo {
+    width: 100%;
+    max-width: 328px;
+    max-height: 70px;
+    margin-bottom: 28px;
+}
+.form {
+    display: block;
+    align-items: center;
+    border-radius: 3px;
+    width: 80%;
+    max-width: 710px;
+    background: transparent;
+    position: relative;
+    margin: 0 auto;
+    padding: 13px 0;
+}
+.form > .input {
+    font-size: 24px;
+    padding: 20px 35px 20px 65px;
+    margin-bottom: 6px;
+    border: none;
+    border-radius: 24px;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background: #35404d;
+    color: #fff;
+    outline: none;
+}
+.form > button {
+    margin-top: 64px;
+    padding: 20px 80px;
+    color: white;
+    background-color: #2178aa;
+    border: none;
+    font-size: 24px;
+    border-radius: 24px;
+}
+.form > button:hover {
+    background-color: #2689c2;
+}
+
+.output {
+    background-color: #fafafa;
+    width: 30%;
+    min-height: 200px;
+    margin: auto;
+    margin-right: 28px;
+    color: #1c2834;
+    text-align: center;
+}
+#response-text {
+    background-color: #eaeaea;
+    width: 95%;
+    margin: 12px auto;
+    padding: 12px;
+    text-align: justify;
+}

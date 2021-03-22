@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+nav {
+    background-color: #1c2834;
+    padding: 8px 40px;
+    text-align: end;
+}
+nav li {
+    list-style-type: none;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1096px;
+    margin: auto;
+}
+
+header {
+    background: #132030;
+    background-image: none;
+    background-size: auto;
+    background-image: url("../images/hero-bg-static.svg");
+    background-size: cover;
+    color: #8d9399;
+    padding: 10px 0px;
+}
+.home-banner {
+    text-align: center;
+    padding: 100px 20px 100px 20px;
+}
+.home-banner > .logo {
+    width: 100%;
+    max-width: 328px;
+    max-height: 70px;
+    margin-bottom: 28px;
+}
+
+.home-banner .search-bar {
+    max-width: 880px;
+}
+.home-banner > .banner-item {
+    margin: 0 auto;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    max-width: 710px;
+    background: transparent;
+    position: relative;
+    margin: 0 auto;
+    padding: 13px 0;
+}
+
+.home-banner .search-bar > .input {
+    font-size: 24px;
+    padding: 20px 35px 20px 65px;
+    border-radius: 35px;
+}
+.search-bar > .input {
+    font-size: 16px;
+    padding: 15px 24px 14px 48px;
+    border: none;
+    border-radius: 24px;
+    width: 150px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background: #35404d;
+    color: #fff;
+    outline: none;
+}
+
+.home-banner .search-bar > .icon {
+    left: 20px;
+    transform: scale(1);
+}
+.search-bar > .icon {
+    width: 45px;
+    height: 45px;
+    background-color: #0175c2;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAARdJREFUOBHNkz1uwkAQhTGkhCuELlQUiAtwilzHtU8BVLkHF4iokbJJkS41EiTS5nvL2FrQGMsdIz3N7ntvZn+8HgyyiDEuwBv4BifLmi8yW/sQ4xMowRl4Ib4Eo/YuKGYixT9QgSUYW9ZcvKJsbYSo42hFmVeeUbzp8vnHRNAdKCqvSc1JTy78NXeVEXWxiuWVcDORnlz4b6TLFFFfRzF2DUaiT5IrxqPnG0L+mDDzDBn3YuNDxjVDNdrZ7LVh/UGtv7sy2+3z1X7xz91GIhFLoOh6R+vWJtao62VrgW1aKsZP8rSrYf6vHSnYgw1IxyEHoAjgfrN7K6kYBKAI4DGbfbCzZ72j3lEUxRdFKxB6F3sF2okg7R/6f6gee6OuegAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+    opacity: .4;
+    position: absolute;
+    left: 10px;
+    transform: scale(0.72);
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.text {
+    margin: 1em auto;
+    max-width: 880px;
+    color: #fff;
+    font-size: 18px;
+}
+.home-banner > .text > a {
+    color: #31b0fc;
+}
