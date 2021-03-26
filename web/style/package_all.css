@@ -38,3 +38,17 @@ nav a{
     color: rgba(0, 0, 0, 0.700);
     padding: 12px 0;
 }
+
+#download {
+    margin: 32px auto;
+    display: block;
+    padding: 20px 80px;
+    color: white;
+    background-color: #2178aa;
+    border: none;
+    font-size: 24px;
+    border-radius: 24px;
+}
+#download:hover {
+    background-color: #2689c2;
+}

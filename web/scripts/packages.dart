@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:http/http.dart' as http;
 
 void main() async {
+  // Show packages cards
   var cardsList = querySelector('#cards');
   List packages = await getPackages(document.baseUri.split('=')[1] ?? '');
   if (packages != null) {
@@ -12,6 +13,15 @@ void main() async {
       cardsList.children.add(card);
     });
   }
+
+  // Download packages.json
+  querySelector('#download').onClick.listen((event) async {
+    try {
+      window.location.href = 'http://localhost:4000/api/packages/download';
+    } catch (e) {
+      window.console.log(e.toString());
+    }
+  });
 }
 
 Future<List> getPackages(String query) async {

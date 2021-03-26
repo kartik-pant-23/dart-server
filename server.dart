@@ -35,6 +35,7 @@ Future main() async {
 void printAllApis(host, port) {
   print("[GET]  http://$host:$port/api/packages/");
   print("[GET]  http://$host:$port/api/packages/?name=<query>");
+  print("[GET]  http://$host:$port/api/packages/download");
   print("[GET]  http://$host:$port/api/packages/<NAME>");
   print("[GET]  http://$host:$port/api/packages/<NAME>/version/<VERSION>");
   print("[POST] http://$host:$port/users/login");

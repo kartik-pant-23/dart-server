@@ -26,6 +26,13 @@ class PackagesApi {
           headers: {'Content-Type': 'application/json'});
     });
 
+    router.get('/download', (Request request) async {
+      return Response.ok(await File('packages.json').readAsString(), headers: {
+        "Content-type": "application/octet-stream",
+        "Content-Disposition": 'attachment; filename="packages.json"'
+      });
+    });
+
     router.get('/<name>', (Request request, String name) {
       print("Packages API request!");
       final package = packages_data
